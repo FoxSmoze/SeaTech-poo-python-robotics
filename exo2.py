@@ -1,14 +1,6 @@
 from robot import Robot
 from human import Human
 
-class Robot():
-    # Robot class content here
-    pass
-
-class Human():   
-    # Human class content here
-    pass
-
 class Cyborg(Robot, Human):   
 
     def __init__(self, name, sexe):   
