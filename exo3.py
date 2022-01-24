@@ -30,9 +30,9 @@ class Compétition(Véhicule):
 
     pass
 
-class WRC(Voiture, Compétition)
+class WRC(Voiture, Compétition):
     def __init__(self):
         print("Et ouais c'est Loeb qui a gagné le rallye de mont'carl")
         super().__init__()
-        
+
     pass
