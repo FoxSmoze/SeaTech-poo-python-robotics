@@ -36,3 +36,17 @@ class WRC(Voiture, Compétition):
         super().__init__()
 
     pass
+
+class Laguna(Voiture):
+    def __init__(self):
+        print("Oh une laguna de ses mort")
+        super().__init__()
+
+    pass
+
+class MotoGP(Moto, Compétition):
+    def __init__(self):
+        print("De sacré couilles mon pote")
+        super().__init__()
+
+    pass
