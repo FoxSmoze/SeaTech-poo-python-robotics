@@ -1,52 +1,60 @@
-from abc import ABCMeta, abstractmethod
+from abc import ABC, ABCMeta, abstractmethod
 
-class Véhicule():
-    def __init__(self):
-        print("C'est un véhicule")
-        
-    pass
+class Véhicule(ABC):
+    def demarrer(self): 
+        pass
 
 class Voiture(Véhicule):
-    def __init__(self):
+    def demarrer(self):
         print("C'est une voiture")
-
-    pass
+        pass
 
 class Moto(Véhicule):
-    def __init__(self):
-        print("C'est une moto et ouais bg")
-
-    pass
+    def demarrer(self):
+        print("C'est une moto eeeeh ouais bg ca se demarre au cick")
+        pass
 
 class Scootbite(Véhicule):
-    def __init__(self):
+    def demarrer(self):
         print("C'est une merde de scoot")
-
-    pass
+        pass
 
 class Compétition(Véhicule):
-    def __init__(self):
-        print("Ah ! La c'est un véhicule de compet frérot")
-
-    pass
-
-class WRC(Voiture, Compétition):
-    def __init__(self):
-        print("Et ouais c'est Loeb qui a gagné le rallye de mont'carl")
-        super().__init__()
-
-    pass
+    def compet(self):
+        print("Ah ! La c'est un véhicule de compet frérot, il faut un lanceur")
+        pass
 
 class Laguna(Voiture):
-    def __init__(self):
+    def lag(self):
         print("Oh une laguna de ses mort")
-        super().__init__()
+        pass
 
-    pass
+class Demolitionderby(Voiture):
+    def demolir(self):
+        print("Demoooolitionnn !!!!")
+        pass
+
+class Rallye(Compétition, Voiture):
+    def wrc(self):
+        print("Et ouais c'est Loeb qui a gagné le rallye de mont'carl")
+        pass
 
 class MotoGP(Moto, Compétition):
-    def __init__(self):
+    def ktm(self):
         print("De sacré couilles mon pote")
-        super().__init__()
+        pass
 
-    pass
+class FinDeVie(Laguna, Demolitionderby):
+    def mort(self):
+        print("Jamais sucée l'auto ses mort")
+        pass
+
+
+MonteCarlo = Rallye()
+Bouillave = FinDeVie()
+FabioQuatarraro = MotoGP()
+
+MonteCarlo.demarrer()
+MonteCarlo.compet()
+MonteCarlo.wrc()
+
