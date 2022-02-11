@@ -1,0 +1,41 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.30036919056743333 0.29980124692556914 0.9054819499579982 1.6724791633517748
+  position 0.08652380427585478 -1.877354438480776 1.328211869186943
+}
+TexturedBackground {
+  texture "stadium"
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 2 2
+}
+SoccerBall {
+  translation -0.25 0 0.24
+}
+Seatech-E-puck {
+  hidden position_0_0 -1.4267247108383536e-14
+  hidden position_0_1 6.8955942992499484e-15
+  translation 0.00730408 0.211651 -6.3962e-05
+  rotation 0.9999999999971481 -2.544475632174563e-10 2.388231466793975e-06 2.443177673352637e-09
+  controller "seatech_controller"
+}
+Catcher-Token2 {
+  translation 0.493853 0.121095 0
+}
+Seatech-E-puck {
+  hidden position_0_0 8.84074557154284
+  hidden position_0_1 12.456341225128206
+  hidden rotation_1 0 -1 0 3.725625042816333
+  hidden rotation_2 0 -1 0 0.1100293892309665
+  translation 0.28849786232466224 0.028809792767865074 -6.396199560259296e-05
+  rotation 2.8087353397331667e-10 9.670865207874301e-11 1 0.6691861796224226
+  name "seatech-e-puck(1)"
+  controller "seatech_controller"
+}
+Token {
+  translation -0.13287 0.230173 0
+}
